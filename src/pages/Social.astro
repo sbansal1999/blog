@@ -2,4 +2,9 @@
 const { platform, username } = Astro.props;
 ---
 
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<div class="mr-5">
+  <a href={`https://www.${platform}.com/${username}`}>
+    <i class={`fa-brands fa-${platform.toLowerCase()}`}></i>
+    {platform}</a
+  >
+</div>
